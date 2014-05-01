@@ -1,0 +1,15 @@
+CC=xc8
+CFLAGS=--chip=16F54 --ASMLIST
+APPNAME=$(shell basename $(shell pwd))-pic
+BUILDFOLDER=build
+
+all: $(BUILDFOLDER) $(BUILDFOLDER)/$(APPNAME)
+
+clean: $(BUILDFOLDER)
+	@echo TODO.
+
+$(BUILDFOLDER):
+	mkdir $(BUILDFOLDER)
+
+$(BUILDFOLDER)/$(APPNAME): main.c
+	$(CC) --OUTDIR=$(BUILDFOLDER) --OBJDIR=$(BUILDFOLDER) $< $(CFLAGS)
