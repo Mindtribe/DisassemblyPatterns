@@ -1,5 +1,5 @@
 CC=xc8
-CFLAGS=--chip=16F54 --ASMLIST
+CFLAGS=--chip=16LF1703 --mode=free --opt=default,+asm,+asmfile,+speed,-space,-debug --asmlist
 APPNAME=$(shell basename $(shell pwd))-pic
 BUILDFOLDER=build
 
@@ -12,4 +12,4 @@ $(BUILDFOLDER):
 	mkdir $(BUILDFOLDER)
 
 $(BUILDFOLDER)/$(APPNAME): main.c
-	$(CC) --OUTDIR=$(BUILDFOLDER) --OBJDIR=$(BUILDFOLDER) $< $(CFLAGS)
+	$(CC) --OUTDIR=$(BUILDFOLDER) --OBJDIR=$(BUILDFOLDER) -m$(basename $@).map $< $(CFLAGS)
