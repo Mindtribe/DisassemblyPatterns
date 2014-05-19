@@ -15,4 +15,4 @@ The makefiles are confgured with compiler flags that will produce verbose listin
 
 Note that these examples are NOT intended to actually run on embedded hardware. They most likely won't. If you modify them to compile with your host compiler instead of ARM or XC8, they should run.
 
-Also note that these are contrived examples intended to force disassembly listings for illustrative purposes. Please don't look to them for examples of good code or project organization.
+Also note that these are contrived examples intended to force assembly listings for illustrative purposes. Please don't look to them for examples of good code or project organization.
