@@ -1,7 +1,7 @@
 DisassemblyPatterns
 ===================
 
-Examples from MindTribe's Disassembly Patterns blog post here: [TBD]
+Examples from MindTribe's Disassembly Patterns blog post here: http://www.mindtribe.com/2014/05/spotting-patterns-in-c-disassembly/
 
 These examples are intended to be compiled with the ARM gcc compiler available here: https://launchpad.net/gcc-arm-embedded
 
